@@ -744,11 +744,11 @@ section .container {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.portfolio .project-item {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.portfolio #project-filters {
   padding: 0;
   margin: 0 auto 15px auto;
   list-style: none;
@@ -757,7 +757,7 @@ section .container {
   padding: 2px 15px;
 }
 
-.portfolio #portfolio-flters li {
+.portfolio #project-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
@@ -772,12 +772,12 @@ section .container {
   border-radius: 4px;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #project-filters li:hover, .portfolio #project-filters li.filter-active {
     color: #FFFFFF;
     background: #1239d6;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.portfolio #project-filters li:last-child {
   color: #000000;
   margin-right: 0;
 }
