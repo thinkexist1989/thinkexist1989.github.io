@@ -847,8 +847,8 @@ section .container {
   z-index: 9994;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+.portfolio .portfolio-wrap .portfolio-info h6 {
+  font-size: 15px;
   color: #fff;
   font-weight: 600;
 }
