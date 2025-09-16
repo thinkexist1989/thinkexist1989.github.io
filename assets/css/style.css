@@ -864,6 +864,7 @@ section .container {
 .portfolio .portfolio-wrap .portfolio-links {
   text-align: center;
   z-index: 4;
+  font-family: "Poppins", sans-serif;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
