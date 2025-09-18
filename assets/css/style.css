@@ -342,6 +342,17 @@ section .container {
   padding: 30px;
 }
 
+section .container a {
+        text-decoration: none;
+        font-style: normal;
+        color: inherit;
+        transition: text-decoration 0.2s;
+}
+
+section .container a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   section {
     top: 120px;
