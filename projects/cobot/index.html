@@ -56,12 +56,64 @@
                     <h2>TALON: 7-DoF Cobot</h2>
                     <ul>
                         <li><strong>Collaborator</strong>: Yunxiang Jiang</li>
+                        <li><strong>Contract Manufacturing</strong>: Landau Robotics. Ltd.</li>
                     </ul>
 
+                    <h4>TALON: 7 DoF Cobot</h4>
+
+                    <p>
+                        TALON is a 7-DoF collaborative robot arm designed for research and industrial applications. It
+                        features a lightweight design, high precision, and advanced safety features, making it suitable
+                        for human-robot interaction tasks. The robot is equipped with torque
+                        sensors each joint and force-torque sensor at end effector. TALON is controlled by <a
+                            href="../rocos/index.html">ROCOS Controller</a> which has multi-level APIs for easy
+                        programming and integration with other systems.
+                    </p>
+
+                    <div style="text-align:center;">
+                        <img src="talon1.png"
+                             style="width:100%;height:auto;display:block;margin-left:auto;margin-right:auto;">
+                        <div style="margin-top:8px;font-size:16px;color:#555;">TALON: 7-DoF Cobot</div>
+                    </div>
+                    <br>
+
+                    <h4>Complicant Control</h4>
+
+                    <p>TALON is equipped with torque sensor at each joint, it can realize complicant controls such as
+                        compliant dragging and collision detection. </p>
+
+                    <div style="text-align:center;">
+                        <video controls style="display:block;margin:20px auto;max-width:80%;">
+                            <source src="complicant.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div style="margin-top:8px;font-size:16px;color:#555;">Complicant Control of TALON. (By
+                            <strong>Jincheng Sun & Yang Luo</strong>)</div>
+                    </div>
 
 
+                    <h4>Dual Arm Control</h4>
+
+                    <p>
+                        Due to the open architecture of ROCOS, it is easy to control multiple robots by one controller.
+                        Here we show a demo of two TALON arm control by one ROCOS controller, achieving synchronization
+                        of robots' movement.
+                    </p>
+
+                    <div style="text-align:center;">
+                        <img src="dual_arm.gif"
+                             style="width:90%;height:auto;display:block;margin-left:auto;margin-right:auto;">
+                        <div style="margin-top:8px;font-size:16px;color:#555;">Dual Arm Control by One Controller (By
+                            <strong>Jincheng Sun & Yang Luo</strong>)
+                        </div>
+                    </div>
+                    <br>
 
                     <h4>Video Demo</h4>
+
+                    <p>
+                        The following video shows the TALON cobot movement controlled by the ROCOS controller. (First-generation without industrial design appearance)
+                    </p>
 
                     <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=301432033&bvid=BV1WF411N7ts&cid=787164216&p=1"
                             style="width:100%;height:500px;" scrolling="no" border="0" frameborder="no" framespacing="0"
