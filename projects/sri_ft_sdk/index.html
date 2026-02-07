@@ -1,11 +1,12 @@
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>Project Details</title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
-  
+
     <!-- Favicons -->
     <link href="../assets/img/favicon.png" rel="icon">
     <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -19,8 +20,9 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
           rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
     <!-- Vendor CSS Files -->
     <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -28,69 +30,146 @@
     <link href="../../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="../../assets/vendor/venobox/venobox.css" rel="stylesheet">
-  
+
     <!-- Template Main CSS File -->
     <link href="../../assets/css/style.css" rel="stylesheet">
-  
+
+    <style>
+        pre {
+            background-color: #f5f5f5;
+            padding: 12px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, "Courier New", monospace;
+        }
+    </style>
+
     <!-- =======================================================
     * Template Name: Personal - v2.2.0
     * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
-  </head>
-  
-  <body data-gr-c-s-loaded="true">
-  
-  <!-- ======= Portfolio Details ======= -->
-    <main id="main">
-      <div id="portfolio-details" class="portfolio-details">
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+<!-- ======= Portfolio Details ======= -->
+<main id="main">
+    <div id="portfolio-details" class="portfolio-details">
         <div class="container">
-  
-          <div class="row">
-  
-            <div class="col-lg-12 portfolio-info">
-              <br>
-              <h2 style="color:#12d640">Image Generator</h2>
-              <ul>
-                <li><strong>Tech Stack</strong>: Python, HTML, CSS, Bootstrap, GCP(Pub/Sub, Dataflow, Data Studio, GAE, BigQuery)</li>
-                <li><strong>Github URL</strong>: <a href="https://github.com/rajaprerak/TwitterAnalysis" target="_blank">Project Link</a></li>
-              </ul>
-  
-                <p>
-                Created a web‑based elastic application to provide the user with a detailed analysis of the sentiment of users on top 10 trending movies and songs with the help of Google Cloud Platform services.              
-                </p>
-                <p>
-                Coded Pub/Sub routine to fetch 1000 tweets at a time from Twitter; used Dataflow for resource autoscaling and dynamic work rebalancing, reducing overall response time by 50\%; stored data in BigQuery table for efficiently displaying data in Google DataStudio.
-                </p>
-                <p>
-                Tested the scalability of web application by generating 10000 user requests with the help of Apache Beam.
-                </p>
+
+            <div class="row">
+
+                <div class="col-lg-12 portfolio-info">
+                    <br>
+                    <h2>SRI-FTSensor-SDK</h2>
+                    <ul>
+                        <li><strong>Tech Stack</strong>: C++</li>
+                        <li><strong>Github URL</strong>: <a href="https://github.com/thinkexist1989/SRI-FTSensor-SDK"
+                                                            target="_blank">Project Link</a></li>
+                    </ul>
+
+                    <h3>Introduction</h3>
+                    <p>SRI FTSensor SDK is a cross-platform C++ wrapper of the FT Sensor made by Sunrise
+                        Instruments.</p>
+
+                    <h3>Dependencies</h3>
+                    <p>The SRI FTSensor SDK is a header-only library. But it depends on some Boost Libs.</p>
+                    <ul>
+                        <li>Boost.Asio Provide tcp, serial-port communication.</li>
+                    </ul>
+                    <p>And also utilize some Boost header-only library, such as <code>lexical_cast</code>,
+                        <code>format</code> and <code>string_algo</code>.</p>
+                    <p>If you are using Linux-like system (e.g. Ubuntu), Boost can be easily installed by package
+                        manager:</p>
+                    <pre><code>$ sudo apt install boost-all-dev</code></pre>
+
+                    <h3>Compile</h3>
+                    <p>You can just put all the header file(in the <code>include</code> directory) into your own
+                        project, and compile it. In the root directory, there has an example to show how to use this
+                        SDK. After installing the Boost library, you can just type the following command:</p>
+                    <pre><code>$ git clone https://github.com/thinkexist1989/SRI-FTSensor-SDK.git
+$ cd SRI-FTSensor-SDK/
+$ mkdir build && cd build
+$ cmake ..
+$ make -j`nproc`
+$ ./test #Run the example</code></pre>
+
+                    <h3>Usage</h3>
+                    <ol>
+                        <li>
+                            <p>Include the header files in your main.cpp</p>
+                            <pre><code>#include &lt;sri/ftsensor.hpp&gt;
+#include &lt;sri/commethernet.hpp&gt; // connection to the tcp-type FTSensor
+
+#include &lt;iostream&gt;
+
+int main() {
+    ...
+}</code></pre>
+                        </li>
+                        <li>
+                            <p>Initialize the communication to FTSensor(I has a tcp-type sensor with ip
+                                192.168.1.108)</p>
+                            <pre><code>SRI::CommEthernet* ce = new SRI::CommEthernet("192.168.1.108", 4008);</code></pre>
+                        </li>
+                        <li>
+                            <p>Initialize the Sensor with communication</p>
+                            <pre><code>SRI::FTSensor sensor(ce);</code></pre>
+                        </li>
+                        <li>
+                            <p>Get or set some parameters</p>
+                            <pre><code>IpAddr ip = sensor.getIpAddress();</code></pre>
+                        </li>
+                        <li>
+                            <p>Get real-time data from sensor</p>
+                            <pre><code>auto rtData = sensor.getRealTimeDataOnce&lt;float&gt;(rtMode,rtDataValid);</code></pre>
+                        </li>
+                    </ol>
+
+                </div>
+
             </div>
-  
-          </div>
-  
+
         </div>
-      </div><!-- End Portfolio Details -->
-    </main><!-- End #main -->
-  
-   <!-- Vendor JS Files -->
-    <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="../../assets/vendor/php-email-form/validate.js"></script>
-    <script src="../../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-    <script src="../../assets/vendor/counterup/counterup.min.js"></script>
-    <script src="../../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="../../assets/vendor/venobox/venobox.min.js"></script>
-  
-    <!-- Template Main JS File -->
-    <script src="../../assets/js/main.js"></script>
-  
-    <script>if( window.self == window.top ) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); } </script>
-  
-  </body>
-  </html>
+    </div><!-- End Portfolio Details -->
+</main><!-- End #main -->
+
+<!-- Vendor JS Files -->
+<script async="" src="//www.google-analytics.com/analytics.js"></script>
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="../../assets/vendor/php-email-form/validate.js"></script>
+<script src="../../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="../../assets/vendor/counterup/counterup.min.js"></script>
+<script src="../../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="../../assets/vendor/venobox/venobox.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="../../assets/js/main.js"></script>
+
+<script>if (window.self == window.top) {
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-55234356-4', 'auto');
+    ga('send', 'pageview');
+} </script>
+
+</body>
+</html>
   
   
