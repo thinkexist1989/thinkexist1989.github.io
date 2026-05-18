@@ -49,6 +49,17 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
+    <!-- Leaflet CSS for OpenStreetMap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    <style>
+        #osm-map {
+            width: 100%;
+            height: 400px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
@@ -980,24 +991,35 @@
             </div>
         </div>
 
-        <div id="baiduMap" style="width:100%;height:400px;margin-top:30px;"></div>
-        <script type="text/javascript"
-                src="https://api.map.baidu.com/api?v=3.0&ak=qTbVIy4OLqWX4qUIeDECLn2sZPrVcpnO"></script>
-        <script type="text/javascript">
-            var map = new BMap.Map("baiduMap");
-            var point = new BMap.Point(123.454703, 41.769508); // 这里是沈阳的经纬度，可根据需要修改
-            map.centerAndZoom(point, 15);
-            map.enableScrollWheelZoom(true);
-            map.addControl(new BMap.ScaleControl()); // 添加比例尺控件
-            var marker = new BMap.Marker(point);
-            map.addOverlay(marker);
-            var infoWindow = new BMap.InfoWindow("中国科学院沈阳自动化研究所<br>地址: 辽宁省沈阳市南塔街114号");
-            marker.addEventListener("click", function () {
-                map.openInfoWindow(infoWindow, point);
-            });
+        <!-- OpenStreetMap using Leaflet -->
+        <div id="osm-map"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+        <script>
+            // Initialize map centered on Shenyang Institute of Automation, CAS
+            // Note: Adjusted from Baidu BD-09 to WGS-84 coordinates
+            var map = L.map('osm-map').setView([41.7611127, 123.4420878], 15);
+            
+            // Add OpenStreetMap tiles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors',
+                maxZoom: 19
+            }).addTo(map);
+            
+            // Add marker at Shenyang Institute of Automation
+            var marker = L.marker([41.7611127, 123.4420878]).addTo(map);
+            
+            // Add popup with location information
+            marker.bindPopup(
+                '<div style="text-align: center;">' +
+                '<strong>Shenyang Institute of Automation</strong><br>' +
+                'Chinese Academy of Sciences<br>' +
+                'No. 114 Nanta Street, Shenyang, China' +
+                '</div>'
+            ).openPopup();
+            
+            // Enable scroll wheel zoom
+            map.scrollWheelZoom.enable();
         </script>
-
-        <!-- <div id="sfczmlqxr5caww28rswrt8849ghbekgnh3j" ></div><script type="text/javascript" src="https://counter1.stat.ovh/private/counter.js?c=zmlqxr5caww28rswrt8849ghbekgnh3j&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="free web counter"><img src="https://counter1.stat.ovh/private/freecounterstat.php?c=zmlqxr5caww28rswrt8849ghbekgnh3j" border="0" title="free web counter" alt="free web counter" style="visibility: none;"></a></noscript> -->
     </div>
 </section>
 
