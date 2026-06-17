@@ -148,4 +148,42 @@
     $('.venobox').venobox();
   });
 
+  // Lazy load Leaflet map when Contact section enters viewport
+  var contactSection = document.querySelector('#contacts');
+  if (contactSection) {
+    var mapObserver = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting) {
+        // Dynamically load Leaflet CSS
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css';
+        document.head.appendChild(link);
+
+        // Dynamically load Leaflet JS
+        var script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js';
+        script.onload = function() {
+          var map = L.map('osm-map').setView([41.7611127, 123.4420878], 15);
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors',
+            maxZoom: 19
+          }).addTo(map);
+          var marker = L.marker([41.7611127, 123.4420878]).addTo(map);
+          marker.bindPopup(
+            '<div style="text-align: center;">' +
+            '<strong>Shenyang Institute of Automation</strong><br>' +
+            'Chinese Academy of Sciences<br>' +
+            'No. 114 Nanta Street, Shenyang, China' +
+            '</div>'
+          ).openPopup();
+          map.scrollWheelZoom.enable();
+        };
+        document.body.appendChild(script);
+
+        mapObserver.disconnect();
+      }
+    }, { threshold: 0.1 });
+    mapObserver.observe(contactSection);
+  }
+
 })(jQuery);
