@@ -42,20 +42,15 @@
 
 ## 🛠 技术栈
 
-### 前端框架和库
-- **Bootstrap** - 响应式布局框架
-- **jQuery** - DOM操作和事件处理
-- **Owl Carousel** - 轮播图组件
-- **Isotope** - 网格布局过滤
-- **Typed.js** - 打字机效果
-- **Venobox** - 灯箱画廊
-- **Waypoints** - 滚动触发动画
+### 当前首页
+- **HTML / CSS / JavaScript** — 连续滚动布局，原生锚点和折叠内容，无构建步骤。
+- **Anime.js 4.5.0** — 本地依赖，入场、滚动显现和按钮反馈，支持减少动态效果。
+- **Isotope / jQuery** — 项目分类和排列；动画库不可用时仍可浏览和筛选。
+- **IBM Plex Sans** — 本地字体，中文使用系统字体回退。
+- **Bootstrap** — 基础样式；原有项目详情页使用独立 `legacy.css` / `legacy.js`，保留 Owl Carousel、Venobox 等组件。
 
-### 图标和动画
-- **Boxicons** - 现代化图标库
-- **Remixicon** - 开源图标库
-- **Icofont** - 图标字体
-- **AOS (Animate on Scroll)** - 滚动动画库
+设计依据：[网站设计方案](docs/website-design-plan.md)、[DESIGN.md](DESIGN.md)。
+第一阶段进度与截图：[审阅说明](docs/phase-one-review.md)。
 
 ### 分析和追踪
 - **Google Analytics** - 网站统计分析
@@ -72,9 +67,14 @@ thinkexist1989.github.io/
 │   └── copilot-instructions.md   # Copilot 使用说明
 ├── assets/
 │   ├── css/
-│   │   └── style.css             # 主样式表
+│   │   ├── style.css             # 新首页样式
+│   │   └── legacy.css            # 原有详情页样式
 │   ├── js/
-│   │   └── main.js               # 主脚本文件
+│   │   ├── main.js               # 首页导航、筛选及地图
+│   │   ├── motion.js             # Anime.js 渐进增强
+│   │   └── legacy.js             # 原有详情页交互
+│   ├── fonts/                    # 本地字体及许可证
+│   ├── media/                    # 压缩预览素材及来源
 │   ├── img/                      # 图片资源
 │   │   ├── background/           # 背景图片
 │   │   ├── certification/        # 证书
@@ -83,6 +83,7 @@ thinkexist1989.github.io/
 │   │   ├── project/              # 项目图片
 │   │   └── profile.png           # 个人照片
 │   └── vendor/                   # 第三方库
+│       ├── animejs/              # Anime.js 及许可证
 │       ├── bootstrap/            # Bootstrap 框架
 │       ├── jquery/               # jQuery 库
 │       ├── owl.carousel/         # 轮播库
@@ -121,10 +122,7 @@ thinkexist1989.github.io/
 #### 使用 Python 运行
 ```bash
 # Python 3.x
-python -m http.server 8000
-
-# 或 Python 2.x
-python -m SimpleHTTPServer 8000
+python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
 #### 使用 Node.js 运行
@@ -163,14 +161,14 @@ https://thinkexist1989.github.io
 
 ### 添加新项目
 1. 在 `projects/` 目录中创建新文件夹和 `index.html`
-2. 在 `assets/img/project/` 中添加项目图片
+2. 在项目目录添加 `intro.jpg` 或 `intro.png`，将资源放在详情页旁
 3. 更新主页面中的项目列表
 
 ### 修改样式
-编辑 `assets/css/style.css` 文件来自定义网站外观
+首页编辑 `assets/css/style.css`；原有详情页编辑 `assets/css/legacy.css`。
 
 ### 修改脚本
-编辑 `assets/js/main.js` 文件来添加新功能或修改交互
+首页交互编辑 `assets/js/main.js`，动画编辑 `assets/js/motion.js`；详情页交互位于 `assets/js/legacy.js`。
 
 ## 📄 许可证
 
@@ -182,6 +180,6 @@ https://thinkexist1989.github.io
 
 ---
 
-**最后更新**: 2026年5月
+**最后更新**: 2026年10月
 **维护者**: Yang Luo (@thinkexist1989)
 

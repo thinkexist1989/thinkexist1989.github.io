@@ -19,18 +19,21 @@ Open `http://localhost:8000`. No build step — edit HTML/CSS/JS directly.
 
 ## Architecture
 
-**Single-page app with section switching.** `index.html` contains all sections (About, Projects, Publications, Contact) as `<section>` elements. Navigation is handled by [assets/js/main.js](assets/js/main.js): clicking a nav link adds `.header-top` to the header (collapsing it) and `.section-show` to the target section, hiding all others. Hash-based deep-linking is supported on page load.
+**Continuous-scroll homepage.** `index.html` exposes all sections through native anchors. `assets/js/main.js` adds mobile navigation, active-section tracking, accessible Isotope filtering, and an optional lazy map. `assets/js/motion.js` adds local Anime.js effects; content remains available with JavaScript disabled or reduced motion enabled.
 
-**Project detail pages are standalone HTML files** under `projects/<name>/index.html`, loaded inside Venobox iframes from the main page. Each references shared CSS/JS via relative paths (`../../assets/...`). Project media (images, GIFs, videos) lives alongside the detail page in the same directory.
+**Standalone project pages.** `projects/<name>/index.html` uses `assets/css/legacy.css` and `assets/js/legacy.js` to retain its existing design until phase two. Homepage project links navigate directly to these pages. Project media stays beside each detail page.
 
 ## Key files
 
 | File | Role |
 |------|------|
-| [index.html](index.html) | Main page — all sections, personal info, publications, project grid, Typed.js init, Leaflet map |
-| [assets/css/style.css](assets/css/style.css) | All custom styles (Bootstrap overrides, section animations, portfolio hover effects) |
-| [assets/js/main.js](assets/js/main.js) | Navigation (desktop + mobile), Isotope project filtering, Venobox lightbox, Owl Carousel, Waypoints |
-| [projects/resume.html](projects/resume.html) | Standalone resume page |
+| `index.html` | Homepage content, projects, publications and contacts |
+| `assets/css/style.css` | Homepage design tokens and responsive layout |
+| `assets/js/main.js` | Navigation, project filtering and lazy map |
+| `assets/js/motion.js` | Optional Anime.js enhancement and video behavior |
+| `assets/media/` | Optimized media; README records original sources |
+| `DESIGN.md` | Visual and interaction specification |
+| `docs/phase-one-review.md` | Review screenshots and validation results |
 
 ## Adding a project
 
@@ -41,11 +44,11 @@ Open `http://localhost:8000`. No build step — edit HTML/CSS/JS directly.
 
 ## Style conventions
 
-- Primary brand color: `#1239d6` (used for links, highlights, header backgrounds on scroll)
-- Accent green: `#1c7d32` (hover states, social link backgrounds)
-- Font stack: `"Lato", "LXGW WenKai Mono TC", sans-serif` for body; `"Poppins", "Raleway"` for headings; `"Birthstone"` for the name in the hero
-- The page background uses a `linear-gradient(160deg, #1239d6 0%, #ffffff 35%)` fixed pseudo-element on `body::before`
-- All third-party libraries are vendored locally in `assets/vendor/` — no CDN dependencies except Google Fonts, Google Analytics/Tag Manager, and Leaflet (loaded from cdnjs)
+- Follow `DESIGN.md`: cool white `#F5F7FA`, graphite `#111820`, engineering blue `#1239D6`.
+- Homepage font: locally bundled IBM Plex Sans with system Chinese fallbacks.
+- Use native controls and visible initial HTML; animation must not gate navigation or reading.
+- Fonts and Anime.js are local; existing analytics and the opt-in Leaflet map use external services.
+- Keep the original style of detail pages in the legacy files until their planned redesign.
 
 ## Template origin
 
