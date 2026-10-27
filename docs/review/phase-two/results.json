@@ -1,0 +1,553 @@
+[
+  {
+    "name": "home-width-320",
+    "pass": true
+  },
+  {
+    "name": "home-width-390",
+    "pass": true
+  },
+  {
+    "name": "home-width-768",
+    "pass": true
+  },
+  {
+    "name": "home-width-991",
+    "pass": true
+  },
+  {
+    "name": "home-width-992",
+    "pass": true
+  },
+  {
+    "name": "home-width-1024",
+    "pass": true
+  },
+  {
+    "name": "home-width-1440",
+    "pass": true
+  },
+  {
+    "name": "module-ecm",
+    "pass": true
+  },
+  {
+    "name": "module-app",
+    "pass": true
+  },
+  {
+    "name": "module-viz",
+    "pass": true
+  },
+  {
+    "name": "module-ecm",
+    "pass": true
+  },
+  {
+    "name": "module-viz",
+    "pass": true
+  },
+  {
+    "name": "module-keyboard",
+    "pass": true
+  },
+  {
+    "name": "publications-{}",
+    "pass": true,
+    "count": "17 works",
+    "expected": 17
+  },
+  {
+    "name": "publications-{\"type\":\"journal\"}",
+    "pass": true,
+    "count": "5 works",
+    "expected": 5
+  },
+  {
+    "name": "publications-{\"type\":\"conference\"}",
+    "pass": true,
+    "count": "3 works",
+    "expected": 3
+  },
+  {
+    "name": "publications-{\"type\":\"patent\"}",
+    "pass": true,
+    "count": "9 works",
+    "expected": 9
+  },
+  {
+    "name": "publications-{\"year\":\"2024\"}",
+    "pass": true,
+    "count": "2 works",
+    "expected": 2
+  },
+  {
+    "name": "publications-{\"query\":\"underwater\"}",
+    "pass": true,
+    "count": "4 works",
+    "expected": 4
+  },
+  {
+    "name": "publications-{\"query\":\"罗阳\"}",
+    "pass": true,
+    "count": "9 works",
+    "expected": 9
+  },
+  {
+    "name": "publications-{\"query\":\"unlikely-no-such-work\"}",
+    "pass": true,
+    "count": "0 works",
+    "expected": 0
+  },
+  {
+    "name": "publications-{\"year\":\"2022\",\"type\":\"journal\"}",
+    "pass": true,
+    "count": "0 works",
+    "expected": 0
+  },
+  {
+    "name": "reset-and-focus",
+    "pass": true
+  },
+  {
+    "name": "clipboard-failure",
+    "pass": true
+  },
+  {
+    "name": "clipboard-success-ui",
+    "pass": true
+  },
+  {
+    "name": "anime-fallback",
+    "pass": true
+  },
+  {
+    "name": "no-js-research",
+    "pass": true
+  },
+  {
+    "name": "zoom-200-equivalent-css-viewport",
+    "pass": true
+  },
+  {
+    "name": "home-errors",
+    "pass": true,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "name": "detail-bone_cut-1440",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-bone_cut-768",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-bone_cut-390",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-bone_cut-320",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-media-idle-bone_cut",
+    "pass": true,
+    "requests": []
+  },
+  {
+    "name": "detail-errors-bone_cut",
+    "pass": true,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "name": "detail-cobot-1440",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-cobot-768",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-cobot-390",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-cobot-320",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-media-idle-cobot",
+    "pass": true,
+    "requests": []
+  },
+  {
+    "name": "detail-errors-cobot",
+    "pass": true,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "name": "detail-dextwin-1440",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-dextwin-768",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-dextwin-390",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-dextwin-320",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-media-idle-dextwin",
+    "pass": true,
+    "requests": []
+  },
+  {
+    "name": "detail-errors-dextwin",
+    "pass": true,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "name": "detail-indoor_robot-1440",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-indoor_robot-768",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-indoor_robot-390",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-indoor_robot-320",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-media-idle-indoor_robot",
+    "pass": true,
+    "requests": []
+  },
+  {
+    "name": "detail-errors-indoor_robot",
+    "pass": true,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "name": "detail-kungshu-1440",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-kungshu-768",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-kungshu-390",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-kungshu-320",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-media-idle-kungshu",
+    "pass": true,
+    "requests": []
+  },
+  {
+    "name": "detail-errors-kungshu",
+    "pass": true,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "name": "detail-msmrs-1440",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-msmrs-768",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-msmrs-390",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-msmrs-320",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-media-idle-msmrs",
+    "pass": true,
+    "requests": []
+  },
+  {
+    "name": "detail-errors-msmrs",
+    "pass": true,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "name": "detail-open_source-1440",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-open_source-768",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-open_source-390",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-open_source-320",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-media-idle-open_source",
+    "pass": true,
+    "requests": []
+  },
+  {
+    "name": "detail-errors-open_source",
+    "pass": true,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "name": "detail-rocos-1440",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-rocos-768",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-rocos-390",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-rocos-320",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-media-idle-rocos",
+    "pass": true,
+    "requests": []
+  },
+  {
+    "name": "detail-errors-rocos",
+    "pass": true,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "name": "detail-sea-1440",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-sea-768",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-sea-390",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-sea-320",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-media-idle-sea",
+    "pass": true,
+    "requests": []
+  },
+  {
+    "name": "detail-errors-sea",
+    "pass": true,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "name": "detail-servo_driver-1440",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-servo_driver-768",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-servo_driver-390",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-servo_driver-320",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-media-idle-servo_driver",
+    "pass": true,
+    "requests": []
+  },
+  {
+    "name": "detail-errors-servo_driver",
+    "pass": true,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "name": "detail-sri_ft_sdk-1440",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-sri_ft_sdk-768",
+    "pass": true,
+    "overflow": [
+      "CODE",
+      "CODE",
+      "CODE"
+    ]
+  },
+  {
+    "name": "detail-sri_ft_sdk-390",
+    "pass": true,
+    "overflow": [
+      "CODE",
+      "CODE",
+      "CODE"
+    ]
+  },
+  {
+    "name": "detail-sri_ft_sdk-320",
+    "pass": true,
+    "overflow": [
+      "CODE",
+      "CODE",
+      "CODE"
+    ]
+  },
+  {
+    "name": "detail-media-idle-sri_ft_sdk",
+    "pass": true,
+    "requests": []
+  },
+  {
+    "name": "detail-errors-sri_ft_sdk",
+    "pass": true,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "name": "detail-unmanned_lab_robot-1440",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-unmanned_lab_robot-768",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-unmanned_lab_robot-390",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-unmanned_lab_robot-320",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-media-idle-unmanned_lab_robot",
+    "pass": true,
+    "requests": []
+  },
+  {
+    "name": "detail-errors-unmanned_lab_robot",
+    "pass": true,
+    "errors": [],
+    "failures": []
+  },
+  {
+    "name": "detail-uwv-1440",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-uwv-768",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-uwv-390",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-uwv-320",
+    "pass": true,
+    "overflow": []
+  },
+  {
+    "name": "detail-media-idle-uwv",
+    "pass": true,
+    "requests": []
+  },
+  {
+    "name": "detail-errors-uwv",
+    "pass": true,
+    "errors": [],
+    "failures": []
+  }
+]

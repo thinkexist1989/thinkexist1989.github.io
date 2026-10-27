@@ -1,0 +1,62 @@
+[
+  {
+    "name": "project-filter-.filter-system",
+    "pass": true
+  },
+  {
+    "name": "project-filter-.filter-control",
+    "pass": true
+  },
+  {
+    "name": "project-filter-.filter-hmi",
+    "pass": true
+  },
+  {
+    "name": "project-filter-*",
+    "pass": true
+  },
+  {
+    "name": "menu-escape",
+    "pass": true
+  },
+  {
+    "name": "anchor",
+    "pass": true
+  },
+  {
+    "name": "history",
+    "pass": true
+  },
+  {
+    "name": "research-reduced-motion",
+    "pass": true
+  },
+  {
+    "name": "derived-video-play",
+    "pass": true
+  },
+  {
+    "name": "detail-pause-retained",
+    "pass": true
+  },
+  {
+    "name": "detail-video-error",
+    "pass": true
+  },
+  {
+    "name": "external-video-idle",
+    "pass": true
+  },
+  {
+    "name": "external-video-open",
+    "pass": true
+  },
+  {
+    "name": "external-video-close",
+    "pass": true
+  },
+  {
+    "name": "detail-no-js",
+    "pass": true
+  }
+]

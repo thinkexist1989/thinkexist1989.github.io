@@ -7,6 +7,7 @@
   var observed = new Set();
   var observer = null;
   var filterAnimation = null;
+  var researchAnimation = null;
   var anime = window.anime;
 
   function animate(targets, settings) {
@@ -39,6 +40,7 @@
     active.forEach(function (animation) { animation.revert(); });
     active.clear();
     filterAnimation = null;
+    researchAnimation = null;
   }
   function startMotion() {
     if (!anime || preference.matches) return;
@@ -72,6 +74,17 @@
       duration: 260,
       ease: 'outQuad'
     });
+  });
+  document.addEventListener('research:changed', function (event) {
+    if (researchAnimation) {
+      researchAnimation.revert();
+      active.delete(researchAnimation);
+    }
+    var visible = event.detail.elements.filter(function (element) {
+      var bounds = element.getBoundingClientRect();
+      return bounds.top < window.innerHeight && bounds.bottom > 0;
+    });
+    researchAnimation = animate(visible, { opacity: [0.65, 1], duration: 220, ease: 'outQuad' });
   });
   document.querySelectorAll('.button').forEach(function (button) {
     var pressed = null;

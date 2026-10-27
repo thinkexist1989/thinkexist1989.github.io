@@ -47,10 +47,12 @@
 - **Anime.js 4.5.0** — 本地依赖，入场、滚动显现和按钮反馈，支持减少动态效果。
 - **Isotope / jQuery** — 项目分类和排列；动画库不可用时仍可浏览和筛选。
 - **IBM Plex Sans** — 本地字体，中文使用系统字体回退。
-- **Bootstrap** — 基础样式；原有项目详情页使用独立 `legacy.css` / `legacy.js`，保留 Owl Carousel、Venobox 等组件。
+- **Bootstrap** — 首页基础样式；项目详情页复用统一设计系统，仅历史 `projects/resume.html` 使用 legacy 资源。
 
 设计依据：[网站设计方案](docs/website-design-plan.md)、[DESIGN.md](DESIGN.md)。
-第一阶段进度与截图：[审阅说明](docs/phase-one-review.md)。
+第二阶段进度与截图：[审阅说明](docs/phase-two-review.md)。
+
+首页新增 ROCOS 架构探索和成果搜索、年份/类型筛选；八篇论文附已核实 DOI 与 BibTeX。成果数据维护在 `assets/data/publications.json`，修改后运行 `python3 scripts/render-publications.py`，并提交更新后的 `index.html`。核实依据与待确认项见[来源记录](docs/publication-sources.md)。
 
 ### 分析和追踪
 - **Google Analytics** - 网站统计分析
@@ -68,11 +70,14 @@ thinkexist1989.github.io/
 ├── assets/
 │   ├── css/
 │   │   ├── style.css             # 新首页样式
-│   │   └── legacy.css            # 原有详情页样式
+│   │   ├── projects.css          # 统一项目详情页样式
+│   │   └── legacy.css            # 历史 resume 页面样式
 │   ├── js/
 │   │   ├── main.js               # 首页导航、筛选及地图
 │   │   ├── motion.js             # Anime.js 渐进增强
-│   │   └── legacy.js             # 原有详情页交互
+│   │   ├── research.js           # 架构探索、论文检索和引用
+│   │   ├── projects.js           # 详情页媒体
+│   │   └── legacy.js             # 历史 resume 页面交互
 │   ├── fonts/                    # 本地字体及许可证
 │   ├── media/                    # 压缩预览素材及来源
 │   ├── img/                      # 图片资源
@@ -165,10 +170,10 @@ https://thinkexist1989.github.io
 3. 更新主页面中的项目列表
 
 ### 修改样式
-首页编辑 `assets/css/style.css`；原有详情页编辑 `assets/css/legacy.css`。
+共享变量和首页编辑 `assets/css/style.css`；项目详情页布局编辑 `assets/css/projects.css`。
 
 ### 修改脚本
-首页交互编辑 `assets/js/main.js`，动画编辑 `assets/js/motion.js`；详情页交互位于 `assets/js/legacy.js`。
+首页导航编辑 `assets/js/main.js`，研究交互编辑 `assets/js/research.js`，动画编辑 `assets/js/motion.js`；详情页媒体交互位于 `assets/js/projects.js`。
 
 ## 📄 许可证
 

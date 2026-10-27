@@ -1,0 +1,309 @@
+{
+  "updated": "2026-10-28",
+  "records": [
+    {
+      "id": "work-5",
+      "type": "journal",
+      "year": 2024,
+      "title": "Tool center point calibration via posture-sequence particle swarm optimization",
+      "citation_html": "Gao Z, Li Y, <strong>Luo Y*</strong>, et al. <em>IEEE Sensors Journal</em>, 2024, 24(3): 3513-3522. (<em>Corresponding author</em>)",
+      "url": "https://doi.org/10.1109/jsen.2023.3344725",
+      "link_label": "Read paper",
+      "bibtex": "@article{luo2024_5,\n  title = {Tool Center Point Calibration via Posture-Sequence Particle Swarm Optimization},\n  author = {Gao, Ziqi and Li, Yingli and Luo, Yang and Sun, Jincheng and Ying, Yuhan and Jiang, Yunxiang and Zhao, Xingang and Zhao, Yiwen},\n  year = {2024},\n  journal = {IEEE Sensors Journal},\n  doi = {10.1109/jsen.2023.3344725},\n  url = {https://doi.org/10.1109/jsen.2023.3344725},\n  volume = {24},\n  number = {3},\n  pages = {3513--3522}\n}",
+      "verification": {
+        "date": "2026-10-28",
+        "source": "https://api.crossref.org/works/10.1109/jsen.2023.3344725",
+        "fields": [
+          "title",
+          "authors",
+          "year",
+          "venue",
+          "doi"
+        ]
+      }
+    },
+    {
+      "id": "work-10",
+      "type": "patent",
+      "year": 2024,
+      "title": "一种遥操作机器人主从手比例映射因子设计方法",
+      "citation_html": "赵忆文, 高子奇, <strong>罗阳</strong>等. 2024-11-26, 中国, ZL202211409096.8 (发明专利)",
+      "url": null,
+      "link_label": null,
+      "bibtex": null,
+      "verification": {
+        "date": null,
+        "source": "Existing portfolio citation; original record link not confirmed"
+      }
+    },
+    {
+      "id": "work-9",
+      "type": "patent",
+      "year": 2023,
+      "title": "一种机器人末端移液装置及机器人移液控制方法",
+      "citation_html": "赵忆文, 赵新刚, 高子奇, 姜运祥, <strong>罗阳</strong>等. 2023-06-27, 中国, ZL202210538249.2 (发明专利)",
+      "url": null,
+      "link_label": null,
+      "bibtex": null,
+      "verification": {
+        "date": null,
+        "source": "Existing portfolio citation; original record link not confirmed"
+      }
+    },
+    {
+      "id": "work-11",
+      "type": "patent",
+      "year": 2022,
+      "title": "一种少自由度闭链空间机构运动解算方法",
+      "citation_html": "赵忆文, <strong>罗阳</strong>, 江超等. 2022-03-23, 中国, CN202210291939.2 (发明专利)",
+      "url": null,
+      "link_label": null,
+      "bibtex": null,
+      "verification": {
+        "date": null,
+        "source": "Existing portfolio citation; original record link not confirmed"
+      }
+    },
+    {
+      "id": "work-12",
+      "type": "patent",
+      "year": 2022,
+      "title": "一种模块化、高度可定制的机器人控制系统",
+      "citation_html": "赵忆文, <strong>罗阳</strong>等. 2022-9-19, 中国, CN202211137360.7 (发明专利)",
+      "url": null,
+      "link_label": null,
+      "bibtex": null,
+      "verification": {
+        "date": null,
+        "source": "Existing portfolio citation; original record link not confirmed"
+      }
+    },
+    {
+      "id": "work-13",
+      "type": "patent",
+      "year": 2022,
+      "title": "一种冗余参数自主规划的机械臂逆运动学解算方法",
+      "citation_html": "赵忆文, 江超, <strong>罗阳</strong>等. 2022-08-23, 中国, CN202211011429.1 (发明专利)",
+      "url": null,
+      "link_label": null,
+      "bibtex": null,
+      "verification": {
+        "date": null,
+        "source": "Existing portfolio citation; original record link not confirmed"
+      }
+    },
+    {
+      "id": "work-14",
+      "type": "patent",
+      "year": 2022,
+      "title": "一种适用于机器人控制的人机交互软件系统",
+      "citation_html": "赵忆文, <strong>罗阳</strong>等. 2022-10-13, 中国, CN202211253216.X (专利申请)",
+      "url": "https://patents.google.com/patent/CN117921644A/zh",
+      "link_label": "Patent record",
+      "bibtex": null,
+      "verification": {
+        "date": "2026-10-28",
+        "source": "https://patents.google.com/patent/CN117921644A/zh",
+        "fields": [
+          "title",
+          "application_number",
+          "filing_date",
+          "inventors"
+        ],
+        "note": "Original software-copyright label corrected to patent application. No current legal-status claim."
+      }
+    },
+    {
+      "id": "work-15",
+      "type": "patent",
+      "year": 2022,
+      "title": "一种用于无人实验室离心机的机器人自主作业控制方法",
+      "citation_html": "赵忆文, 孙锦程, 魏仁松, <strong>罗阳</strong>等. 2022-7-11, 中国, CN202210811113.4 (发明专利)",
+      "url": null,
+      "link_label": null,
+      "bibtex": null,
+      "verification": {
+        "date": null,
+        "source": "Existing portfolio citation; original record link not confirmed"
+      }
+    },
+    {
+      "id": "work-16",
+      "type": "patent",
+      "year": 2022,
+      "title": "一种超声检查机器人末端执行器",
+      "citation_html": "赵忆文, 高子奇, 姜运祥, <strong>罗阳</strong>等. 2022-11-21, 中国, CN202211452172.3 (发明专利)",
+      "url": null,
+      "link_label": null,
+      "bibtex": null,
+      "verification": {
+        "date": null,
+        "source": "Existing portfolio citation; original record link not confirmed"
+      }
+    },
+    {
+      "id": "work-17",
+      "type": "patent",
+      "year": 2022,
+      "title": "一种仿人手生理结构的线驱动手指",
+      "citation_html": "赵忆文, 张元林, 姜运祥, <strong>罗阳</strong>等. 2022-6-2, 中国, CN202210624184.3 (发明专利)",
+      "url": null,
+      "link_label": null,
+      "bibtex": null,
+      "verification": {
+        "date": null,
+        "source": "Existing portfolio citation; original record link not confirmed"
+      }
+    },
+    {
+      "id": "work-3",
+      "type": "journal",
+      "year": 2021,
+      "title": "An intelligent graphene‐based biosensing device for cytokine storm syndrome biomarkers detection in human biofluids",
+      "citation_html": "Hao Z, <strong>Luo Y</strong>, Huang C, et al. <em>Small</em>, 2021, 17(29): 2101508. (<em>Co-first author</em>)",
+      "url": "https://doi.org/10.1002/smll.202101508",
+      "link_label": "Read paper",
+      "bibtex": "@article{luo2021_3,\n  title = {An Intelligent Graphene‐Based Biosensing Device for Cytokine Storm Syndrome Biomarkers Detection in Human Biofluids},\n  author = {Hao, Zhuang and Luo, Yang and Huang, Cong and Wang, Ziran and Song, Guoli and Pan, Yunlu and Zhao, Xuezeng and Liu, Shaoqin},\n  year = {2021},\n  journal = {Small},\n  doi = {10.1002/smll.202101508},\n  url = {https://doi.org/10.1002/smll.202101508},\n  volume = {17},\n  number = {29},\n  pages = {2101508}\n}",
+      "verification": {
+        "date": "2026-10-28",
+        "source": "https://api.crossref.org/works/10.1002/smll.202101508",
+        "fields": [
+          "title",
+          "authors",
+          "year",
+          "venue",
+          "doi"
+        ],
+        "note": "Page range or article number retained from the existing portfolio citation; other metadata checked against Crossref."
+      }
+    },
+    {
+      "id": "work-4",
+      "type": "journal",
+      "year": 2020,
+      "title": "A novel camera calibration method based on multilevel-edge-fitting ellipse-shaped analytical model",
+      "citation_html": "Su S, <strong>Luo Y</strong>, Yang K, et al. <em>IEEE Sensors Journal</em>, 2020, 20(11): 5818-5826.",
+      "url": "https://doi.org/10.1109/jsen.2020.2972615",
+      "link_label": "Read paper",
+      "bibtex": "@article{luo2020_4,\n  title = {A Novel Camera Calibration Method Based on Multilevel-Edge-Fitting Ellipse-Shaped Analytical Model},\n  author = {Su, Shun and Luo, Yang and Yang, Keke and Gao, Zhenyuan and Zhao, Yiwen and Zhao, Xingang and Song, Guoli},\n  year = {2020},\n  journal = {IEEE Sensors Journal},\n  doi = {10.1109/jsen.2020.2972615},\n  url = {https://doi.org/10.1109/jsen.2020.2972615},\n  volume = {20},\n  number = {11},\n  pages = {5818--5826}\n}",
+      "verification": {
+        "date": "2026-10-28",
+        "source": "https://api.crossref.org/works/10.1109/jsen.2020.2972615",
+        "fields": [
+          "title",
+          "authors",
+          "year",
+          "venue",
+          "doi"
+        ]
+      }
+    },
+    {
+      "id": "work-1",
+      "type": "journal",
+      "year": 2019,
+      "title": "A novel localization approach for underwater welding vehicles in spent fuel pools via attitude heading reference system and altimeters",
+      "citation_html": "<strong>Luo Y</strong>, Tao J, Sun H, et al. <em>International Journal of Advanced Robotic Systems</em>, 2019, 16(2): 1-11.",
+      "url": "https://doi.org/10.1177/1729881419830540",
+      "link_label": "Read paper",
+      "bibtex": "@article{luo2019_1,\n  title = {A novel localization approach for underwater welding vehicles in spent fuel pools via attitude heading reference system and altimeters},\n  author = {Luo, Yang and Tao, Jianguo and Sun, Hao and Hao, Zhuang and Li, Hao and Na, Qiang and Gao, Haibo and Ding, Liang and Deng, Zongquan},\n  year = {2019},\n  journal = {International Journal of Advanced Robotic Systems},\n  doi = {10.1177/1729881419830540},\n  url = {https://doi.org/10.1177/1729881419830540},\n  volume = {16},\n  number = {2},\n  pages = {1--11}\n}",
+      "verification": {
+        "date": "2026-10-28",
+        "source": "https://api.crossref.org/works/10.1177/1729881419830540",
+        "fields": [
+          "title",
+          "authors",
+          "year",
+          "venue",
+          "doi"
+        ],
+        "note": "Page range or article number retained from the existing portfolio citation; other metadata checked against Crossref."
+      }
+    },
+    {
+      "id": "work-2",
+      "type": "journal",
+      "year": 2019,
+      "title": "Centroid variability model–based control of HITUWV for automatic underwater welding with enhanced stability and accuracy",
+      "citation_html": "<strong>Luo Y</strong>, Tao J, Hao Z, et al. <em>Advances in Mechanical Engineering</em>, 2019, 11(11): 1-14.",
+      "url": "https://doi.org/10.1177/1687814019890219",
+      "link_label": "Read paper",
+      "bibtex": "@article{luo2019_2,\n  title = {Centroid variability model–based control of HITUWV for automatic underwater welding with enhanced stability and accuracy},\n  author = {Luo, Yang and Tao, Jianguo and Hao, Zhuang and Sun, Hao and Li, Zhandong and Gao, Haibo and Ding, Liang and Deng, Zongquan},\n  year = {2019},\n  journal = {Advances in Mechanical Engineering},\n  doi = {10.1177/1687814019890219},\n  url = {https://doi.org/10.1177/1687814019890219},\n  volume = {11},\n  number = {11},\n  pages = {1--14}\n}",
+      "verification": {
+        "date": "2026-10-28",
+        "source": "https://api.crossref.org/works/10.1177/1687814019890219",
+        "fields": [
+          "title",
+          "authors",
+          "year",
+          "venue",
+          "doi"
+        ],
+        "note": "Page range or article number retained from the existing portfolio citation; other metadata checked against Crossref."
+      }
+    },
+    {
+      "id": "work-8",
+      "type": "conference",
+      "year": 2018,
+      "title": "A new underwater robot for crack welding in nuclear power plants",
+      "citation_html": "<strong>Luo Y</strong>, Tao J, Sun Q, et al. <em>2018 IEEE international conference on robotics and biomimetics (ROBIO)</em>. IEEE, 2018: 77-82.",
+      "url": "https://doi.org/10.1109/robio.2018.8665279",
+      "link_label": "Read paper",
+      "bibtex": "@inproceedings{luo2018_8,\n  title = {A New Underwater Robot for Crack Welding in Nuclear Power Plants},\n  author = {Luo, Yang and Tao, Jianguo and Sun, Qingjie and Deng, Liping and Deng, Zongquan},\n  year = {2018},\n  booktitle = {2018 IEEE International Conference on Robotics and Biomimetics (ROBIO)},\n  doi = {10.1109/robio.2018.8665279},\n  url = {https://doi.org/10.1109/robio.2018.8665279},\n  pages = {77--82}\n}",
+      "verification": {
+        "date": "2026-10-28",
+        "source": "https://api.crossref.org/works/10.1109/robio.2018.8665279",
+        "fields": [
+          "title",
+          "authors",
+          "year",
+          "venue",
+          "doi"
+        ]
+      }
+    },
+    {
+      "id": "work-6",
+      "type": "conference",
+      "year": 2017,
+      "title": "An accurate cavitation prediction thruster model based on Gaussian process regression",
+      "citation_html": "<strong>Luo Y</strong>, Tao J, Li Z, et al. <em>2017 IEEE International Conference on Robotics and Biomimetics (ROBIO)</em>. IEEE, 2017: 575-580.",
+      "url": "https://doi.org/10.1109/robio.2017.8324478",
+      "link_label": "Read paper",
+      "bibtex": "@inproceedings{luo2017_6,\n  title = {An accurate cavitation prediction thruster model based on Gaussian process regression},\n  author = {Luo, Yang and Tao, Jianguo and Li, Zhandong and Ding, Liang and Deng, Zongquan and Sun, Hao and Song, Xingguo},\n  year = {2017},\n  booktitle = {2017 IEEE International Conference on Robotics and Biomimetics (ROBIO)},\n  doi = {10.1109/robio.2017.8324478},\n  url = {https://doi.org/10.1109/robio.2017.8324478},\n  pages = {575--580}\n}",
+      "verification": {
+        "date": "2026-10-28",
+        "source": "https://api.crossref.org/works/10.1109/robio.2017.8324478",
+        "fields": [
+          "title",
+          "authors",
+          "year",
+          "venue",
+          "doi"
+        ]
+      }
+    },
+    {
+      "id": "work-7",
+      "type": "conference",
+      "year": 2017,
+      "title": "A novel underwater localization algorithm fusing ahrs with altimeters",
+      "citation_html": "<strong>Luo Y</strong>, Tao J, Li Z, et al. <em>2017 12th International Conference on Computer Science and Education (ICCSE)</em>. IEEE, 2017: 791-794.",
+      "url": "https://doi.org/10.1109/iccse.2017.8085602",
+      "link_label": "Read paper",
+      "bibtex": "@inproceedings{luo2017_7,\n  title = {A novel underwater localization algorithm fusing AHRS with altimeters},\n  author = {Luo, Yang and Tao, Jianguo and Li, Zhandong and Ding, Liang and Deng, Zongquan and Zhao, Chenjian},\n  year = {2017},\n  booktitle = {2017 12th International Conference on Computer Science and Education (ICCSE)},\n  doi = {10.1109/iccse.2017.8085602},\n  url = {https://doi.org/10.1109/iccse.2017.8085602},\n  pages = {791--794}\n}",
+      "verification": {
+        "date": "2026-10-28",
+        "source": "https://api.crossref.org/works/10.1109/iccse.2017.8085602",
+        "fields": [
+          "title",
+          "authors",
+          "year",
+          "venue",
+          "doi"
+        ]
+      }
+    }
+  ]
+}

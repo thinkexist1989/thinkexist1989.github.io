@@ -1,0 +1,26 @@
+[
+  {
+    "name": "initial-8001-1440",
+    "bytes": 2086556,
+    "requests": 27,
+    "videoRequests": 0
+  },
+  {
+    "name": "initial-8001-390",
+    "bytes": 1098037,
+    "requests": 23,
+    "videoRequests": 0
+  },
+  {
+    "name": "initial-8000-1440",
+    "bytes": 1515401,
+    "requests": 26,
+    "videoRequests": 0
+  },
+  {
+    "name": "initial-8000-390",
+    "bytes": 1128694,
+    "requests": 24,
+    "videoRequests": 0
+  }
+]
